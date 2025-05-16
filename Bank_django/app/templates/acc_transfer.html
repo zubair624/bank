@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    FROM Account Number 
+    <input type="number" name="facc" id=""><br>
+    TO ACCOUNT Number
+    <input type="number" name="tacc" id=""><br>
+    pin <input type="password" name="pin" id=""><br>
+    Amount <input type="number" name="amt" id=""> <br>
+    <button type="submit">TRANSFER</button> <br>
+    {{msg}}
+</form>
+{% endblock content %}

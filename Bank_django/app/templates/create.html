@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% block content %}
+<form action="" method="post">
+    {% csrf_token %}
+    NAME <input type="text" name="name" id=""> <br>
+    PHONE <input type="number" name="phone" id=""> <br>
+    Aadhar_number <input type="number" name="aadhar" id=""> <br>
+    <label for="">Gender</label> Male <input type="radio" name="gender" value="Male" id=""> 
+    Female <input type="radio" name="gender" value="Female" id=""> <br>
+    DOB <input type="date" name="dob" id=""> <br>
+    ACCOUNT TYPE <select name="acc_type" id=""><option value="saving">savings</option>
+    <option value="current">current</option></select> <br><br>
+    address <textarea name="address" id=""></textarea> <br><br>
+    <button type="submit">SUBMIT</button>
+</form>
+{% endblock content %}

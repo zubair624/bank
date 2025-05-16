@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+<h1>CBI</h1>
+<h2>CHILDREN'S BANK OF INDIA</h2>
+<a href="{% url 'create' %}"><img src="{% static 'images/1.png' %}" alt=""></a>
+<a href="{% url 'pin' %}"><img src="{% static 'images/2.png' %}" alt=""></a>
+<a href="{% url 'bal' %}"><img src="{% static 'images/3.png' %}" alt=""></a>
+<a href="{% url 'deposit' %}"><img src="{% static 'images/4.png' %}" alt=""></a>
+<a href="{% url 'withdrawl' %}"><img src="{% static 'images/5.png' %}" alt=""></a>
+<a href="{% url 'transfer' %}"><img src="{% static 'images/6.png' %}" alt=""></a>
+
+{% endblock content %}
